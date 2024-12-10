@@ -1,0 +1,125 @@
+#samsung {
+    grid-area: samsung;
+    text-align: center;
+    padding: 5px;
+}
+
+#samsung_fig {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#samsung_fig img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+}
+
+#huawei{
+    grid-area: huawei;
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+}
+
+#sony{
+    grid-area: sony;
+    padding: 5px;
+    text-align: center;
+}
+
+#welcome{
+    grid-area: welcome;
+}
+
+#apple{
+    grid-area: apple;
+    text-align: center;
+}
+
+#samsung{
+    grid-area: samsung;
+}  
+
+#samsung_iframe{
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+    aspect-ratio: 16 / 9;
+}  
+
+#info{
+    grid-area: info;
+}
+
+#promotii{
+    grid-area: promotii;
+}
+
+#orar{
+    grid-area: orar;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "welcome welcome welcome"
+        "apple apple apple"
+        "samsung samsung huawei"
+        "samsung samsung sony"
+        "info info promotii"
+        "info info orar";
+}
+#grid>*{
+    outline: solid var(--color1);
+}
+
+
+/* ecran mediu */
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 14px;
+    }
+    
+    body{
+        --spatiere: 100px;
+
+    }
+
+        #grid {
+            display: grid;
+            grid-template-areas:
+                "welcome welcome"
+                "apple apple"
+                "samsung samsung"
+                "samsung_iframe samsung_iframe"
+                "info promotii";
+        }
+
+    
+
+    
+}
+
+
+/* ecran mic */
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 12px;
+    }
+    
+    body{
+        --spatiere: 50px;
+
+    }
+
+    #grid {
+        display: block;
+       
+    }
+
+
+    
+}
+

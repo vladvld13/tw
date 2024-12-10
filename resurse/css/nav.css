@@ -1,0 +1,54 @@
+nav{
+    --inaltime: 2rem;
+    --latime_buton: 100px;
+    --culoare_text: black;
+}
+
+/* stilizare hamburger + linii hamburger */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;  
+    height: 30px;
+}
+
+.hamburger div {
+    background-color: black; 
+    height: 5px; 
+    width: 100%; 
+    border-radius: 5px; 
+    margin: 2px;
+    transition: transform 0.3s ease; 
+}
+
+.hamburger:hover div {
+    background-color: var(--color1); /* Schimbă culoarea liniilor */
+}
+
+.meniu ul{
+    display: none;
+}
+.meniu{
+    display: flex;
+    list-style-type: none; /* nu mai afiseaza lista cu (*) */
+ }
+
+.meniu, .meniu *{
+    padding: 0;
+    margin: 0;
+}
+
+.meniu li{
+    text-align: center;
+    border: 1px solid var(--color1);
+    font-weight: bold;
+    height: var(--inaltime);
+    width: var(--latime_buton);
+}
+.meniu a, .meniu div:not(.hamburger){
+    text-decoration: none;
+    color: var(--culoare_text);
+    display: block;
+    height: 100%;
+}

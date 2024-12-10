@@ -1,0 +1,60 @@
+html{
+    font-size: 17px;
+    transition: all 0.5s linear;
+    
+}
+
+html section>*{
+    text-align: center;
+    
+}
+
+body{
+    --color1: #29297D;
+    --spatiere: 100px;
+    padding-left: var(--spatiere);
+    padding-right: var(--spatiere);
+    transition: all 0.5s linear;
+
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+h2{
+    border: 2px solid var(--color1);
+    padding: 10px;
+
+}
+
+#iph, #ipad, #mac{
+    margin: 0;
+    opacity: 0.85;
+    transition: all 0.5s ease;
+}
+
+#iph:hover, #ipad:hover, #mac:hover {
+    opacity: 1;
+}
+
+.container_iframe {
+    display: flex;
+}
+
+.taburi_iframe>a{  /*selectez link-urile din iframe */
+    display: block;
+    border: 1px solid green;
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    line-height: 30px; /* line height = height pentru text centrat pe verticala */
+    box-shadow: 10px 0px 5px 5px ; 
+}
+
+.taburi_iframe{
+    display: block;
+    
+}
+
+

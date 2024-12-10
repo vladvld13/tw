@@ -1,0 +1,51 @@
+@media print{
+    #grid{
+        display: block;
+    }
+
+    html img, html picture, .container_iframe, iframe, nav, #link-top {
+        display: none;
+    }
+
+    body{
+        --spatiere: 100px;
+        padding-left: var(--spatiere);
+        padding-right: var(--spatiere);
+    }
+
+    h2{
+        border: none;
+    }
+
+    #grid>*{
+        outline: none;
+    }
+    h1{
+		page-break-after: always;
+		margin-top: 50%;
+		text-align:center;
+		margin-left:1cm;
+	}
+    #apple{
+        page-break-after: always;
+    }
+    #banner{
+        display: block;
+        position: fixed;
+        bottom:0;
+        color:rgba(0,0,0,0.4);
+        right:0;
+    }
+
+    #banner:after{
+        opacity:0.4;
+        padding:5px;
+        display: block;
+        background: white;
+        border:2px solid black;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+        border-right:none;
+        content:"Copyright Vlad Ancuta";
+    }
+}
