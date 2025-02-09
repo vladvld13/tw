@@ -2,11 +2,11 @@
 <html lang="ro">
     <head>
         <title>4Sale.ro</title>
-        <meta charset="UTF-8"><!-- codificarea în memorie a caracterelor-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="telefon, 4sale, forsale, calculator, tableta, carti, reduceri, pret redus, Bucuresti, transport prin curier, oferta, discount"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
         <meta name="description" content="Magazinul 4Sale ofera telefoane, tablete, calculatoare, moda si carti la cele mai bune preturi. Livrare la domiciliu in Bucuresti."><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
-        <meta name="author" content="Vlad-Adrian Ancuta">  <!-- autorul/autoarea paginii-->
+        <meta name="author" content="Vlad-Adrian Ancuta">  
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,8 @@
         <link rel="stylesheet" href="resurse/css/stil.css" type="text/css">
         <link rel="stylesheet" href="resurse/css/print.css" type="text/css">
         <link rel="stylesheet" href="resurse/css/nav.css" type="text/css">
+        <link rel="stylesheet" href="resurse/css/screen1000.css" type="text/css">
+        <link rel="stylesheet" href="resurse/css/screen800.css" type="text/css">
 
 
     </head>
@@ -34,24 +36,34 @@
         <header>
             <h1>4Sale.ro</h1>
             <nav>
+                <label id="home" for="ch-meniu" class="fa-solid fa-house"></label>
+                <input id="ch-meniu" type="checkbox">
                 <ul class="meniu">
                     <li>    
                         <div class="hamburger">
                             <div></div>
                             <div></div>
                             <div></div>
+                            
                         </div>
                             <ul>
+                                <a href = '#welcome'>Welcome</a>
                                 <a href = '#apple'>Apple</a>
                                 <a href = '#samsung'>Samsung</a>
                                 <a href = '#info'>Informatii</a>
                             </ul>
                     </li>
-                    <li>Produse</li>
-                    <li>
-                        <a href = '#welcome'>Bine ati venit</a>
+                    <li><div id= "produse">Produse</div><div id= "produse-mediu"><span class="fa-solid fa-laptop"></span></div></li>
+
+                    <li><div id="account">Contul Meu</div><div id="account-mediu"><span class="fa-solid fa-file-invoice"></span></div>
+                        <ul>
+                            <a href = '#'>Log In</a>
+                            <a href = '#'>Sign In</a>
+                            <a href = '#'>Name</a>
+                        </ul>
                     </li>
-                    <li><a target="_blank" href="http://www.google.com">Google</a></li>
+
+                    <li><div id="cos">Cos</div><div id="cos-mediu"><span class="fa-solid fa-cart-shopping"></span></li>
                 </ul>
             </nav>
             
@@ -88,7 +100,7 @@
                         <picture>
                             <source media="(max-width:600px)" srcset="resurse/img/swatch.jpg">
                             <source media="(max-width:1000px)" srcset="resurse/img/s24.jpg">
-                            <img src="resurse/img/sm_tv.jpg" alt="Smart tv" style="width:auto;">
+                            <img src="resurse/img/sm_tv.jpg" alt="Smart tv" class="imag">
                         </picture>
                         <figcaption>Produse Samsung</figcaption>
                     </figure>
@@ -110,7 +122,7 @@
                     <h3>Huawei</h3>
                     <figure id="huawei_fig">
                         <picture>
-                            <img src="resurse/img/hua.jpeg" alt="Huawei" style="width:auto;">
+                            <img src="resurse/img/hua.jpeg" alt="Huawei" class="imag">
                         </picture>
                         <figcaption>Produse Samsung</figcaption>
                     </figure>
@@ -231,7 +243,7 @@
                 <i class="fa-solid fa-phone"></i><a href="tel:+40766301761">Telefon</a>
                 <a href="mailto:vlad.3456@gmail.com">E-mail</a>
                 <a href="https://wa.me/0766301761">Whatsapp</a>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.884114398441!2d26.097011775701!3d44.435539301482414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1730667072689!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.884114398441!2d26.097011775701!3d44.435539301482414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1730667072689!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="address-ifr"></iframe>
             </address>
             <small>Copyright &copy; <time datetime="2024-11-04 23:00">Luni, 4 noiembrie 2024</time></small>
         </footer>
