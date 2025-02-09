@@ -1,0 +1,10 @@
+#err-imag {
+    display: flex;  /* Activează flexbox */
+    justify-content: center;  /* Centrează pe orizontală */
+    align-items: center;  /* Centrează pe verticală */
+}
+
+#err-imag img {
+    width: 30%;
+    height: auto;
+}

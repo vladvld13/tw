@@ -1,0 +1,7 @@
+@media screen and (max-width: 1200px) {
+    .grid-carti{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:10px;
+    }
+}

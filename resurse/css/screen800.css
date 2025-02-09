@@ -1,0 +1,87 @@
+/* ecran mic */
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 12px;
+    }
+    
+    body{
+        --spatiere: 0px;
+        margin: 0;
+
+    }
+
+    #grid {
+        display: block;
+       
+    }
+
+    .container_iframe{
+        display: none;
+    }
+
+    nav{
+        --latime_buton:100%
+    }
+
+    .meniu{
+        display: none;
+        position: absolute;
+        width: 100%;
+    }
+
+    #home{
+        display: block;
+    }
+/*Selectez ch meniu = checked si elementul imediat urmator (+)*/
+    #ch-meniu:checked+ul.meniu{
+        display: block;
+        animation-name: afisare-meniu;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transform-origin: 0% 100%;
+        
+    }
+@keyframes afisare-meniu {
+    0%{
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    
+}
+
+
+#account{
+    display: block;
+}
+#account-mediu{
+    display: none;
+}
+
+#cos{
+    display: block;
+}
+#cos-mediu{
+    display: none;
+}
+#galerie_statica{
+    display: block;
+}
+#galerie_statica_mediu{
+    display: none;
+}
+#produse{
+    display: block;
+}
+#produse-mediu{
+    display: none;
+}
+
+
+    
+}

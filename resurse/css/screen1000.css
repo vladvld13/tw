@@ -1,0 +1,55 @@
+/* ecran mediu */
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 14px;
+    }
+    
+    body{
+        --spatiere: 100px;
+
+    }
+
+        #grid {
+            display: grid;
+            grid-template-areas:
+                "welcome welcome"
+                "apple apple"
+                "samsung samsung" 
+                "orar sony"
+                "info huawei"  
+                "galerie galerie"
+                "promotii promotii";
+        }
+
+    #account{
+        display: none;
+    }
+    #account-mediu{
+        display: block;
+    }
+
+    #cos{
+        display: none;
+    }
+    #cos-mediu{
+        display: block;
+    }
+    #galerie_statica{
+        display: none;
+    }
+    #galerie_statica_mediu{
+        display: block;
+    }
+    #produse{
+        display: none;
+    }
+    #produse-mediu{
+        display: block;
+    }
+    
+    
+
+    
+
+    
+}

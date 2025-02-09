@@ -1,0 +1,19 @@
+.grid-carti{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+
+}
+
+.carte:nth-child(9n+1){
+    background-color: grey;
+}
+
+.media-rating{
+    transition: all 2s linear;
+}
+
+.carte:hover .media-rating {
+    background-color: red;
+    transform: translateY(-5px);
+}
