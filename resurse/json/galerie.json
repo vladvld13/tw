@@ -1,0 +1,72 @@
+{
+	"cale_galerie":"resurse/img/galerie",
+	"imagini": [
+		{
+			"fisier":"tel1.jpg",
+			"descriere":"Samsung Galaxy",
+			"luni":["martie","februarie","noiembrie","aprilie", "decembrie"]
+		},
+		{
+			"fisier":"tel2.jpg",
+			"descriere":"RedMi",
+			"luni":["ianuarie","februarie","iunie"]
+			
+		},
+		{
+			"fisier":"tel3.jpg",
+			"descriere":"Xiaomi",
+			"luni":["ianuarie","noiembrie","iunie","martie","aprilie"]
+		},
+		{
+			"fisier":"tab1.jpg",
+			"descriere":"Tableta 1",
+			
+			"luni":["noiembrie","aprilie", "decembrie"]
+		},
+		{
+			"fisier":"tab2.jpg",
+			"descriere":"tableta 2",
+			
+			"luni":["noiembrie","aprilie", "decembrie"]
+		},
+		{
+			"fisier":"tab3.jpg",
+			"descriere":"tableta 3"
+		},
+		{
+			"fisier":"pc1.jpg",
+			"descriere":"PC 1",
+			"luni":[ "februarie"]
+		},
+		{
+			"fisier":"pc2.jpg",
+			"descriere":"PC 2",
+			"luni":[ "februarie"]
+		},
+		{
+			"fisier":"pc3.jpg",
+			"descriere":"PC 3",
+			"luni":[ "februarie"]
+		},
+		{
+			"fisier":"laptop1.jpg",
+			"descriere":"Laptop 1",
+			"luni":[ "februarie"]
+		},
+		{
+			"fisier":"laptop2.jpg",
+			"descriere":"Laptop 2",
+			"luni":[ "februarie"]
+		},
+		{
+			"fisier":"laptop3.jpg",
+			"descriere":"Laptop 3",
+			"luni":[ "februarie"]
+		},
+		{
+			"fisier":"ps5.jpg",
+			"descriere":"PS5",
+			"luni":[ "februarie"]
+		}
+	]
+}
