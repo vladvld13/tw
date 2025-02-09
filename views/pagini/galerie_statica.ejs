@@ -1,0 +1,22 @@
+<head>
+    <%- include("../fragmente/head.ejs") %>
+</head>
+
+<body>
+    <p><%- locals.ip %></p>
+    <%- include("../fragmente/header.ejs") %>
+        <main>
+            <section id="galerie-statica">
+                <h2>Galerie</h2>
+                <div id="grid-galerie">
+                    <% for (let imag of imagini) { %>
+                        <%- include("../fragmente/galerie.ejs", { imag: imag }) %>
+                    <% } %>                    
+                </div>
+            </section>
+        </main>
+
+        <%- include("../fragmente/footer.ejs")  %>
+
+    </body>
+</html>
